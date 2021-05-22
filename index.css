@@ -1,11 +1,73 @@
 #Home{
     margin: 0;
     padding: 0;
+    /* border-radius: 70%; */
+    /* box-sizing: border-box; */
 }
-.menu img{
-    background-image: url(logo.jpeg);
+#menu .slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 20s infinite;
+
+}
+p{
+    position: fixed;
+    color: orange;
+    font-size: 90px;
+    text-align: center;
+    padding-top: 250px;
+    width: 100%;
+    height: 100vh;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+@keyframes animate{
+    0%{left:0;}
+    10%{left:0;}
+    12%{left:-100%;}
+    22%{left:-100%;}
+    24%{left:-200%;}
+    34%{left:-200%;}
+    36%{left:-300%;}
+    46%{left:-300%;}
+    48%{left:-400%;}
+    58%{left:-400%;}
+    60%{left:-300%;}
+    70%{left:-300%;}
+    72%{left:-200%;}
+    82%{left:-200%;}
+    84%{left:-100%;}
+    94%{left:-100%;}
+  
     
+    
+    
+    
+    
+
 }
+
 .menu ul{
     background: #660432b0;
     list-style: none;
@@ -33,10 +95,72 @@
     background: #79a82259;
 
 }
-.children img{
-    width: 900px;
-    height: 315px;
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+
+}
+.paragraph{
+    padding: 20px;
+    font-size: large;
+}
+#form{
+    margin: 0;
+    padding: 0;
+ 
+
+}
+.login-form{
+    width: 350px;
     
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    position: absolute;
+}
+.login-form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    
+}
+.login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.login-form input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5%;
+    border: 0;
+}
+p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 40px auto;
+
+}
+.copyrights{
+    text-align: center;
+    color: black;
+    font-style: italic;
 }
 #Our Team{
     margin: 0;
@@ -74,8 +198,8 @@
 }
 .members{
     padding: 40px 0;
-    background: #f1f1f1;
-    color: #434343;
+    background: #f7f3f3;
+    color: #141414;
     text-align: center;
 }
 .inner{
@@ -103,6 +227,27 @@
     padding: 15px;
 
 }
+.slider{
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    animation: slide 20s infinite;
+
+}
+/* @keyframes slide{
+    25%{
+        background: url(pic2.jpg) no-repeat;
+    }
+    50%{
+        background: url(pic3.jpg) no-repeat;
+    }
+    75%{
+        background: url(fam.jpeg) no-repeat;
+    }
+    100%{
+        background: url(team.jpg) no-repeat;
+    }
+} */
 .member{
     background: #fff;
     padding: 30px;
@@ -112,39 +257,175 @@
 .member img{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 200%;
 
 }
-.name{
+/* .name{
     font-size: 20px;
     text-transform: uppercase;
     margin: 20px 0;
 
-}
+} */
 h1{
     color: black;
 }
-#footer{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: rgb(21, 22,26);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    /* padding: 20px; */
-
-}
 p{
-    font-size: 28px;
+    font-size: 14px;
     font-weight: bold;
     margin: 40px auto;
 
 }
+/* #footer{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    max-width: 100%;
+    bottom: 0;
+    
+} */
+/* .copyrights{
+    text-align: center;
+    color: black;
+    font-style: italic;
+} */
+#Contact{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    border: 0;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 0;
+    margin: 16px 0;
+    background: burlywood;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+}
+textarea.contact-form-text{
+    height: 120px;
+    resize: none;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: silver;
+    padding: 12px 50px;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+}
+.contact-form-btn:hover{
+    background: rgb(238, 152, 238);
+}
+.contact-form-text:hover{
+    background: tomato;
+}
+.menu ul{
+    background: #660432b0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    width: 100%;
+    display: block;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-family: arial;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu a:hover{
+    background: #79a82259;
+
+}
+#About{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #e1f3e7;
+    padding: 100px;
+}
+.inner-container h1{
+    font-size: 50px;
+    margin-bottom: 90px;
+    font-weight: 900;
+}
+.paragraph-2{
+    font-size: 20px;
+    text-align: center;
+}
+/* .text{
+    font-size: 20px;
+    color: #0e0000;
+    line-height: 30px;
+    text-align: justify;
+    /* margin-bottom: 40px; */
+/* } */
+.menu ul{
+    background: #660432b0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    width: 100%;
+    display: block;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-family: arial;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menu a:hover{
+    background: #79a82259;
+
+}
+
+
+
 
